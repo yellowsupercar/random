@@ -89,6 +89,7 @@ makeRect(60, 40, 15, 50, "green", 1)
 makeRect(74, 60, 15, 10, "green", 1)
 makeRect(80, 55, 15, 10, "green", 1)
 makeRect(55, 70, 15, 10, "green", 1)
+makeImage("https://www.nps.gov/miss/learn/nature/images/turkeyVulture.jpg", 150, 27, 25, 20, 1)
 
 
 

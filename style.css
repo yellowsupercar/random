@@ -7,3 +7,8 @@
 h1 {
   font-family: Baloo Tamma; text-align: center;
 }
+
+body{
+    background: url('http://www.contentchina.net/uploadfile/2016/1019/20161019085257741.jpg');
+    background-height: 100%;
+}
