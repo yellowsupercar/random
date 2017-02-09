@@ -5,7 +5,43 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+makeRect(0, 0, 200, 80, "cyan", 1)
+makeRect(0, 80, 200, 50, "green", 1)
+makeRect(50, 40, 15, 50, "brown", 1)
+makeCircle(53, 40, 19, "green", 1)
+makeCircle(65, 40, 13, "green", 1)
+makeCircle(200, 10, 10, "yellow", 1)
+makeRect(80, 40, 15, 50, "brown", 1)
+makeRect(120, 40, 15, 50, "brown", 1)
+makeRect(30, 40, 15, 50, "brown", 1)
+makeCircle(73, 40, 19, "green", 1)
+makeCircle(75, 40, 13, "green", 1)
+makeCircle(100, 40, 19, "green", 1)
+makeCircle(85, 40, 13, "green", 1)
+makeCircle(33, 40, 19, "green", 1)
+makeCircle(45, 40, 13, "green", 1)
+makeCircle(130, 40, 19, "green", 1)
+makeCircle(124, 40, 13, "green", 1)
+makeCircle(149, 40, 19, "green", 1)
+makeCircle(130, 40, 13, "green", 1)
+makeRect(10, 40, 15, 50, "brown", 1)
+makeRect(158, 40, 15, 50, "brown", 1)
+makeCircle(160, 40, 19, "green", 1)
+makeCircle(9, 40, 19, "green", 1)
+makeRect(157, 40, 15, 50, "brown", 1)
+makeRect(137, 35, 15, 50, "brown", 1)
+makeCircle(137, 30, 19, "green", 1)
+makeRect(100, 35, 15, 50, "brown", 1)
+makeCircle(110, 30, 20, "green", 1)
+makeCircle(20, 37, 20, "green", 1)
+makeCircle(40, 30, 20, "green", 1)
+makeCircle(160, 30, 20, "green", 1)
+makeCircle(60, 30, 20, "green", 1)
+makeCircle(76, 30, 20, "green", 1)
+makeRect(186, 70, 4, 10, "brown", 1)
+makeRect(180, 61, 15, 10, "brown", 1)
+makeText("Forest", 180, 70, 6, "black", 1)
+makeCircle(180, 35, 17, "green", 1)
 }
 
 
@@ -13,7 +49,32 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeRect(0, 0, 200, 80, "blue", 1)
+makeRect(0, 80, 200, 50, "orange", 1)
+makeImage("http://il7.picdn.net/shutterstock/videos/9232466/thumb/1.jpg", 82, 27, 39, 29, 1)
+makeImage("http://vignette4.wikia.nocookie.net/depth-game/images/6/6b/Depth-Bonus-BattleScarred-clean.png/revision/latest?cb=20141209232207", 140, 27, 40, 31, 1)
+makeRect(120, 30, 3, 23, "grey", 1)
+makeRect(110, 30, 3, 23, "grey", 1)
+makeRect(100, 30, 3, 23, "grey", 1)
+makeRect(90, 30, 3, 23, "grey", 1)
+makeRect(80, 30, 3, 23, "grey", 1)
+makeRect(80, 30, 43, 3, "grey", 1)
+makeRect(80, 50, 43, 3, "grey", 1)
+makeRect(100, 0, 3, 40, "grey", 1)
+
+
+
+
+
+
+// Make a cage dude.
+
+
+
+
+
+
+  
 }
 
 
@@ -21,7 +82,16 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+   makeRect(0, 0, 200, 80, "cyan", 1)
+makeRect(0, 80, 200, 50, "orange", 1)
+makeCircle(190, 10, 30, "yellow", 1)
+makeRect(60, 40, 15, 50, "green", 1)
+makeRect(74, 60, 15, 10, "green", 1)
+makeRect(80, 55, 15, 10, "green", 1)
+makeRect(55, 70, 15, 10, "green", 1)
+
+
+
 }
 
 
@@ -32,20 +102,27 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var random= Math.random() 
     // If the number is less than 0.33, call the function to create your first scene.
-    
+    if(random<0.33) {
+        createFirstScene()
+    } else {
+        if(random<0.67) {
+            createSecondScene()
+        }
+         else createThirdScene()
+            }
+}
+        
     
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
     
-    
+   
     
     // Else, call the function to create your third scene.
-    
-    
-    
-}
+        
+
 
 
 
